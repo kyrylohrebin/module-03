@@ -7,6 +7,8 @@ header, body {
 
 nav {
 text-align : center;
+margin: 0 auto;
+width: 900px;
 } 
 
 .navpan {
@@ -28,38 +30,40 @@ a {
     color: #03a9f4;
   }
   
-  li {
+  li{
     display: inline-block;
-    padding-right: 90px;
+
   }
+
+.nav-element:not(:last-child) {
+  margin-right: 94px;
+}
 
 header {
     padding-top: 78px;
     padding-bottom: 80px;
 }
-
-.sect1, .sect2 {
-  width: 960px;
+.container {
+  width: 900px;
   box-sizing: border-box;
-  margin: auto;
-  margin-bottom: 80px;
+  margin: 0 auto;
+  margin-bottom: 54px;
 }
 
-.sect3 {
-  width: 960px;
-  box-sizing: border-box;
-  margin: auto;
+.post {
+display: inline-block;
+box-sizing: border-box;
+width: 420px;
+font-size: 0px;
+margin-bottom: 130px;
 }
 
-article {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 470px;
-  padding: 20px;
+.post:nth-child(odd) {
+  margin-right: 56px;
 }
 
-.article1, .article2 {
-    margin-bottom: 12px;
+.post:nth-child(n+5) {
+margin-bottom: 0px;
 }
 
 img {
@@ -69,10 +73,13 @@ img {
 
 .heading {
   font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
   text-transform: uppercase;
   color: #b4ad9e;
-  margin-bottom: 28px;
+  margin-bottom: 14px;
+  line-height: 1.2;
   margin-top: 0px;
+  font-weight: 300;
 }
 
 h2 {
@@ -96,9 +103,10 @@ h2 {
 }
 
 .btn {
-    text-align: center;
-    margin-top: 32px;
+    margin: 0 auto;
     padding-bottom: 70px;
+    width: 900px;
+    text-align: center;
 }
 
 button {
